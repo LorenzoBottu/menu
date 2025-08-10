@@ -10,7 +10,7 @@ function App() {
       </main>
       <footer className="text-center p-8 bg-black/50 text-brand-text-secondary">
         <p className="font-serif text-xl text-brand-primary">Caffè del Corso</p>
-        <p className="text-sm mt-2">Piazza Principale, 123 - La Tua Città</p>
+        <p className="text-sm mt-2">Piazza Principale, 123 - Carpi</p>
       </footer>
     </div>
   );

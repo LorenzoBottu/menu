@@ -1,10 +1,10 @@
 {
   "caffetteria": [
-    { "id": 1, "nome": "Espresso del Corso", "prezzo": "1.50€", "descrizione": "La nostra miscela speciale, intensa e aromatica.", "immagine": "/images/caffe.jpg" },
-    { "id": 2, "nome": "Cappuccino Artistico", "prezzo": "2.80€", "descrizione": "Con latte art, cremoso e vellutato.", "immagine": "/images/cappuccino.jpg" }
+    { "id": 1, "nome": "Espresso del Corso", "prezzo": "1.50€", "descrizione": "La nostra miscela speciale, intensa e aromatica.", "immagine": "/images/espresso.png" },
+    { "id": 2, "nome": "Cappuccino Artistico", "prezzo": "2.80€", "descrizione": "Con latte art, cremoso e vellutato.", "immagine": "/images/capuccino.png" }
   ],
   "americanBar": [
-    { "id": 5, "nome": "Spritz Veneziano", "prezzo": "7.00€", "descrizione": "Aperol o Campari, prosecco di Valdobbiadene.", "immagine": "/images/spritz.jpg" },
-    { "id": 6, "nome": "Negroni 'Sbagliato' Giusto", "prezzo": "8.00€", "descrizione": "Campari, Vermouth rosso, Spumante Brut.", "immagine": "/images/negroni.jpg" }
+    { "id": 5, "nome": "Spritz Veneziano", "prezzo": "7.00€", "descrizione": "Aperol o Campari, prosecco di Valdobbiadene.", "immagine": "/images/spritz aperol.png" },
+    { "id": 6, "nome": "Negroni 'Sbagliato' Giusto", "prezzo": "8.00€", "descrizione": "Campari, Vermouth rosso, Spumante Brut.", "immagine": "/images/negroni.png" }
   ]
 }
