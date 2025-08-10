@@ -1,20 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      // Definiamo la nostra palette di colori personalizzata
       colors: {
-        'brand-background': '#121212', // Nero quasi assoluto per lo sfondo
-        'brand-surface': '#1E1E1E',   // Una superficie leggermente più chiara per le card
-        'brand-primary': '#D4AF37',   // Un oro/ottone per gli accenti
-        'brand-text': '#E0E0E0',      // Un testo bianco sporco, più riposante
-        'brand-text-secondary': '#A0A0A0', // Testo secondario/descrizioni
+        'brand-background': '#121212',
+        'brand-surface': '#1E1E1E',
+        'brand-primary': '#D4AF37',
+        'brand-text': '#E0E0E0',
+        'brand-text-secondary': '#A0A0A0',
       },
-      // Definiamo i nostri font personalizzati
       fontFamily: {
         'serif': ['"Playfair Display"', 'serif'],
         'sans': ['"Lato"', 'sans-serif'],

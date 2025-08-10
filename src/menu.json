@@ -1,10 +1,95 @@
 {
   "caffetteria": [
-    { "id": 1, "nome": "Espresso del Corso", "prezzo": "1.50€", "descrizione": "La nostra miscela speciale, intensa e aromatica.", "immagine": "/images/espresso.png" },
-    { "id": 2, "nome": "Cappuccino Artistico", "prezzo": "2.80€", "descrizione": "Con latte art, cremoso e vellutato.", "immagine": "/images/capuccino.png" }
+    { "id": 101, "nome": "Espresso", "prezzo": "1.50€", "descrizione": "Miscela arabica selezionata, tostatura media." },
+    { "id": 102, "nome": "Espresso Decaffeinato", "prezzo": "1.80€", "descrizione": "Stesso gusto, senza caffeina, metodo ad acqua." },
+    { "id": 103, "nome": "Espresso Doppio", "prezzo": "2.80€", "descrizione": "La doppia carica della nostra miscela speciale." },
+    { "id": 104, "nome": "Macchiato Caldo", "prezzo": "1.60€", "descrizione": "Espresso con una goccia di schiuma di latte." },
+    { "id": 105, "nome": "Macchiato Freddo", "prezzo": "1.60€", "descrizione": "Espresso con una goccia di latte freddo." },
+    { "id": 106, "nome": "Cappuccino", "prezzo": "2.80€", "descrizione": "Perfetto equilibrio tra espresso e latte montato." },
+    { "id": 107, "nome": "Latte Macchiato", "prezzo": "3.50€", "descrizione": "Cremoso latte caldo 'macchiato' con un espresso." },
+    { "id": 108, "nome": "Caffè Americano", "prezzo": "2.50€", "descrizione": "Espresso allungato con acqua calda." },
+    { "id": 109, "nome": "Marocchino", "prezzo": "3.00€", "descrizione": "Espresso, schiuma di latte e una spolverata di cacao." },
+    { "id": 110, "nome": "Ginseng", "prezzo": "2.50€", "descrizione": "Caffè con estratto di radice di ginseng." },
+    { "id": 111, "nome": "Orzo", "prezzo": "2.50€", "descrizione": "Alternativa senza caffeina, in tazza grande." },
+    { "id": 112, "nome": "Tè Caldo (selezione)", "prezzo": "4.00€", "descrizione": "English Breakfast, Earl Grey, Tè Verde, Camomilla." },
+    { "id": 113, "nome": "Cioccolata Calda", "prezzo": "4.50€", "descrizione": "Densa e cremosa, con panna montata a richiesta." },
+    { "id": 114, "nome": "Cornetto Artigianale", "prezzo": "2.00€", "descrizione": "Vuoto, crema, cioccolato, marmellata." },
+    { "id": 115, "nome": "Pasticceria Mignon", "prezzo": "1.50€", "descrizione": "Selezione del giorno dal nostro pasticcere." }
   ],
-  "americanBar": [
-    { "id": 5, "nome": "Spritz Veneziano", "prezzo": "7.00€", "descrizione": "Aperol o Campari, prosecco di Valdobbiadene.", "immagine": "/images/spritz aperol.png" },
-    { "id": 6, "nome": "Negroni 'Sbagliato' Giusto", "prezzo": "8.00€", "descrizione": "Campari, Vermouth rosso, Spumante Brut.", "immagine": "/images/negroni.png" }
+  "drinks": [
+    { "id": 201, "nome": "Americano", "prezzo": "8.00€", "descrizione": "Campari, Vermouth Rosso, Soda." },
+    { "id": 202, "nome": "Negroni", "prezzo": "9.00€", "descrizione": "Campari, Vermouth Rosso, Gin." },
+    { "id": 203, "nome": "Negroni Sbagliato", "prezzo": "9.00€", "descrizione": "Campari, Vermouth Rosso, Spumante Brut." },
+    { "id": 204, "nome": "Spritz Veneziano", "prezzo": "7.00€", "descrizione": "Aperol o Campari, Prosecco, Soda." },
+    { "id": 205, "nome": "Hugo", "prezzo": "8.00€", "descrizione": "Sciroppo di sambuco, Prosecco, Menta, Soda." },
+    { "id": 206, "nome": "Mojito", "prezzo": "9.00€", "descrizione": "Rum bianco, Lime, Zucchero, Menta, Soda." },
+    { "id": 207, "nome": "Moscow Mule", "prezzo": "9.00€", "descrizione": "Vodka, Ginger Beer, Succo di lime." },
+    { "id": 208, "nome": "Gin Tonic 'Base'", "prezzo": "8.00€", "descrizione": "Gin Beefeater, Tonica Schweppes." },
+    { "id": 209, "nome": "Gin Tonic 'Premium'", "prezzo": "12.00€", "descrizione": "Hendrick's Gin, Tonica Fever-Tree, Cetriolo." },
+    { "id": 210, "nome": "Old Fashioned", "prezzo": "10.00€", "descrizione": "Bourbon Whiskey, Zucchero, Angostura." },
+    { "id": 211, "nome": "Margarita", "prezzo": "9.00€", "descrizione": "Tequila, Triple Sec, Succo di lime." },
+    { "id": 212, "nome": "Espresso Martini", "prezzo": "10.00€", "descrizione": "Vodka, Liquore al caffè, Espresso fresco." },
+    { "id": 213, "nome": "Bloody Mary", "prezzo": "9.00€", "descrizione": "Vodka, Succo di pomodoro, Spezie." },
+    { "id": 214, "nome": "Analcolico della Casa", "prezzo": "7.00€", "descrizione": "Creazione a base di frutta fresca di stagione." }
+  ],
+  "vini_al_calice": [
+    { "id": 301, "nome": "Prosecco Valdobbiadene DOCG", "prezzo": "7.00€", "descrizione": "Extra Dry, fruttato e floreale." },
+    { "id": 302, "nome": "Franciacorta Brut DOCG", "prezzo": "9.00€", "descrizione": "Elegante, note di lievito e agrumi." },
+    { "id": 303, "nome": "Champagne Brut", "prezzo": "12.00€", "descrizione": "Selezione del nostro sommelier." },
+    { "id": 304, "nome": "Pinot Grigio (Bianco)", "prezzo": "6.00€", "descrizione": "Fresco e leggero, dal Friuli." },
+    { "id": 305, "nome": "Vermentino di Sardegna (Bianco)", "prezzo": "6.50€", "descrizione": "Sapido, con sentori di macchia mediterranea." },
+    { "id": 306, "nome": "Sauvignon Blanc (Bianco)", "prezzo": "7.00€", "descrizione": "Aromatico e intenso, note di pompelmo." },
+    { "id": 307, "nome": "Chianti Classico (Rosso)", "prezzo": "7.00€", "descrizione": "Sangiovese in purezza, tannino morbido." },
+    { "id": 308, "nome": "Primitivo di Manduria (Rosso)", "prezzo": "6.50€", "descrizione": "Corposo e avvolgente, sentori di frutta matura." },
+    { "id": 309, "nome": "Valpolicella Classico (Rosso)", "prezzo": "7.00€", "descrizione": "Fresco e beverino, note di ciliegia." },
+    { "id": 310, "nome": "Rosato del Salento", "prezzo": "6.00€", "descrizione": "Fresco e fruttato, perfetto per l'aperitivo." }
+  ],
+  "birre": [
+    { "id": 401, "nome": "Ichnusa Non Filtrata (spina)", "prezzo": "5.00€", "descrizione": "Birra lager, 33cl." },
+    { "id": 402, "nome": "Menabrea Bionda (spina)", "prezzo": "5.00€", "descrizione": "Pale lager premium, 33cl." },
+    { "id": 403, "nome": "Moretti (bottiglia)", "prezzo": "4.00€", "descrizione": "La classica lager italiana, 33cl." },
+    { "id": 404, "nome": "Peroni Nastro Azzurro (bottiglia)", "prezzo": "4.00€", "descrizione": "Premium lager, 33cl." },
+    { "id": 405, "nome": "Heineken (bottiglia)", "prezzo": "4.50€", "descrizione": "International lager, 33cl." },
+    { "id": 406, "nome": "Leffe Blonde (bottiglia)", "prezzo": "6.00€", "descrizione": "Birra d'abbazia belga, speziata, 33cl." },
+    { "id": 407, "nome": "Lagunitas IPA (bottiglia)", "prezzo": "6.50€", "descrizione": "India Pale Ale californiana, amara e agrumata." },
+    { "id": 408, "nome": "Guinness (lattina)", "prezzo": "6.00€", "descrizione": "La celebre stout irlandese, cremosa." }
+  ],
+  "cibo": [
+    { "id": 501, "nome": "Tagliere di Salumi", "prezzo": "15.00€", "descrizione": "Selezione di salumi locali con gnocco fritto." },
+    { "id": 502, "nome": "Tagliere di Formaggi", "prezzo": "16.00€", "descrizione": "Formaggi misti con miele e confetture." },
+    { "id": 503, "nome": "Tagliere Misto 'Del Corso'", "prezzo": "20.00€", "descrizione": "Il meglio dei nostri salumi e formaggi." },
+    { "id": 504, "nome": "Club Sandwich", "prezzo": "12.00€", "descrizione": "Pollo, bacon, pomodoro, lattuga, maionese. Servito con patatine." },
+    { "id": 505, "nome": "Hamburger 'Classico'", "prezzo": "13.00€", "descrizione": "Manzo 200g, cheddar, pomodoro, lattuga. Servito con patatine." },
+    { "id": 506, "nome": "Patatine Fritte", "prezzo": "5.00€", "descrizione": "Le classiche, croccanti e dorate." },
+    { "id": 507, "nome": "Olive Ascolane", "prezzo": "7.00€", "descrizione": "10 pezzi." },
+    { "id": 508, "nome": "Insalata 'Caesar'", "prezzo": "10.00€", "descrizione": "Lattuga, pollo grigliato, crostini, scaglie di grana, salsa caesar." }
+  ],
+  "bottiglie": [
+    { "id": 601, "nome": "Ca' del Bosco, Franciacorta Cuvée Prestige", "prezzo": "45€", "descrizione": "Un'icona di stile e qualità." },
+    { "id": 602, "nome": "Bellavista, Franciacorta Alma Gran Cuvée", "prezzo": "48€", "descrizione": "Fresco, vibrante e complesso." },
+    { "id": 603, "nome": "Veuve Clicquot, Champagne Brut", "prezzo": "80€", "descrizione": "Potenza ed eleganza in un sorso." },
+    { "id": 604, "nome": "Jermann, Vintage Tunina (Bianco)", "prezzo": "60€", "descrizione": "Un blend leggendario dal Friuli." },
+    { "id": 605, "nome": "Antinori, Tignanello (Rosso)", "prezzo": "150€", "descrizione": "Il Supertuscan che ha fatto la storia." },
+    { "id": 606, "nome": "Gaja, Barbaresco (Rosso)", "prezzo": "250€", "descrizione": "L'eccellenza del Nebbiolo piemontese." }
+  ],
+  "distillati": [
+    { "id": 701, "nome": "Gin Mare", "prezzo": "10€", "descrizione": "Distillato mediterraneo con sentori di oliva e rosmarino." },
+    { "id": 702, "nome": "Hendrick's Gin", "prezzo": "10€", "descrizione": "Infuso con cetriolo e petali di rosa." },
+    { "id": 703, "nome": "Monkey 47", "prezzo": "12€", "descrizione": "Schwarzwald dry gin, 47 botaniche." },
+    { "id": 704, "nome": "Belvedere (Vodka)", "prezzo": "9€", "descrizione": "Vodka polacca premium, 100% segale." },
+    { "id": 705, "nome": "Lagavulin 16 (Whisky)", "prezzo": "14€", "descrizione": "Single Malt scozzese intensamente torbato." },
+    { "id": 706, "nome": "Oban 14 (Whisky)", "prezzo": "12€", "descrizione": "Single Malt delle Highlands, note marine e fruttate." },
+    { "id": 707, "nome": "Zacapa 23 (Rum)", "prezzo": "14€", "descrizione": "Rum guatemalteco invecchiato con metodo solera." },
+    { "id": 708, "nome": "Don Julio Añejo (Tequila)", "prezzo": "12€", "descrizione": "Tequila 100% agave, invecchiata 18 mesi." }
+  ],
+  "amari": [
+    { "id": 801, "nome": "Montenegro", "prezzo": "4.00€", "descrizione": "Sapore dolce-amaro, note di arancia e vaniglia." },
+    { "id": 802, "nome": "Averna", "prezzo": "4.00€", "descrizione": "Amaro siciliano, gusto pieno e agrumato." },
+    { "id": 803, "nome": "Fernet-Branca", "prezzo": "4.50€", "descrizione": "Intenso e balsamico, con note di menta." },
+    { "id": 804, "nome": "Cynar", "prezzo": "4.00€", "descrizione": "A base di foglie di carciofo." },
+    { "id": 805, "nome": "Braulio", "prezzo": "5.00€", "descrizione": "Amaro alpino della Valtellina." },
+    { "id": 806, "nome": "Amaro del Capo", "prezzo": "4.00€", "descrizione": "Va servito ghiacciato, erbe di Calabria." },
+    { "id": 807, "nome": "Jefferson", "prezzo": "5.00€", "descrizione": "Amaro importante, agrumi e spezie." },
+    { "id": 808, "nome": "Limoncello di Sorrento", "prezzo": "4.00€", "descrizione": "Il classico, servito freddo." }
   ]
 }
