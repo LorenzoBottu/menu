@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "./components/Hero";
 import MenuCategory from "./components/MenuCategory";
 import menuData from "./menu.json";
