@@ -30,7 +30,7 @@ function App() {
 
       <footer className="text-center p-8 bg-gray-100 dark:bg-black/50 text-gray-600 dark:text-brand-text-secondary transition-colors duration-500">
         <p className="font-serif text-xl text-brand-primary">Caffè del Corso</p>
-        <p className="text-sm mt-2">Piazza Principale, 123 - La Tua Città</p>
+        <p className="text-sm mt-2">Lorenzo Botti</p>
       </footer>
     </div>
   );
