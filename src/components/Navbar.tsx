@@ -118,7 +118,7 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
           >
             <div className="flex justify-between items-center w-full">
               <span className="font-serif text-xl font-bold text-brand-primary">
-                Caffè del Corso
+                Caffè Del Corso
               </span>
               <button
                 onClick={() => setIsOpen(false)}
