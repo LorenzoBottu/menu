@@ -8,11 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'brand-background': '#121212',
-        'brand-surface': '#1E1E1E',
-        'brand-primary': '#D4AF37',
-        'brand-text': '#E0E0E0',
-        'brand-text-secondary': '#A0A0A0',
+        'brand-primary': 'rgb(var(--color-primary) / <alpha-value>)',
+        'brand-background': 'rgb(var(--color-background) / <alpha-value>)',
+        'brand-text': 'rgb(var(--color-text) / <alpha-value>)',
+        'brand-text-secondary': 'rgb(var(--color-text-secondary) / <alpha-value>)',
       },
       fontFamily: {
         'serif': ['"Playfair Display"', 'serif'],

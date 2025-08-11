@@ -1,7 +1,9 @@
+// src/App.tsx
 import Hero from "./components/Hero";
 import MenuCategory from "./components/MenuCategory";
 import menuData from "./menu.json";
-import MenuNav from "./components/Navbar"; // <-- IMPORTA IL NUOVO COMPONENTE
+import MenuNav from "./components/Navbar";
+import Footer from "./components/Footer";
 
 type MenuData = {
   [key: string]: any[];
@@ -12,10 +14,11 @@ function App() {
   const categorie = Object.keys(typedMenuData);
 
   return (
-    <div className="bg-white dark:bg-brand-background font-sans text-gray-800 dark:text-brand-text transition-colors duration-500">
+    // --- MODIFICA CHIAVE QUI ---
+    // Rimosso bg-white e text-gray-800 per usare sempre le classi del tema.
+    <div className="bg-brand-background text-brand-text font-sans transition-colors duration-500">
       <Hero />
 
-      {/* Usa il nuovo componente passando le categorie */}
       <MenuNav categorie={categorie} />
 
       <main id="menu" className="container mx-auto px-6 py-20">
@@ -28,10 +31,7 @@ function App() {
         ))}
       </main>
 
-      <footer className="text-center p-8 bg-gray-100 dark:bg-black/50 text-gray-600 dark:text-brand-text-secondary transition-colors duration-500">
-        <p className="font-serif text-xl text-brand-primary">Caffè del Corso</p>
-        <p className="text-sm mt-2">Lorenzo Botti</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

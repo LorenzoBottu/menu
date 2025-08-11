@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import ThemeSwitcher from "./ThemeSwitcher";
-
-// --- Props e Funzioni di utility (invariate) ---
 interface MenuNavProps {
   categorie: string[];
 }
@@ -12,7 +10,6 @@ const formatNavTitle = (title: string) => {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
-// --- Icone SVG (invariate) ---
 const HamburgerIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +43,6 @@ const CloseIcon = () => (
   </svg>
 );
 
-// --- Componente Principale della NavBar (Logica aggiornata) ---
 const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,8 +56,6 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
-
-  // NUOVO: Varianti di animazione per il pannello a schermo intero e i link
   const panelVariants: Variants = {
     hidden: { opacity: 0, transition: { duration: 0.3, ease: "easeInOut" } },
     visible: { opacity: 1, transition: { duration: 0.3, ease: "easeInOut" } },
@@ -83,16 +77,14 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
 
   return (
     <>
-      {/* La barra di navigazione visibile rimane la stessa */}
       <nav className="sticky top-0 z-30 bg-white/80 dark:bg-brand-background/80 backdrop-blur-sm shadow-md transition-colors duration-500">
         <div className="container mx-auto flex items-center justify-between px-4 py-2">
           <a
             href="#"
             className="font-serif text-xl font-bold text-brand-primary"
           >
-            Caffè del Corso
+            Caffè Del Corso
           </a>
-          {/* Navigazione Desktop */}
           <div className="hidden md:flex items-center gap-x-6">
             {categorie.map((categoria) => (
               <a
@@ -105,7 +97,6 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
             ))}
             <ThemeSwitcher />
           </div>
-          {/* Bottone Hamburger Mobile */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(true)}
@@ -116,8 +107,6 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
           </div>
         </div>
       </nav>
-
-      {/* MODIFICATO: Menu overlay a schermo intero */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -127,7 +116,6 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
             animate="visible"
             exit="hidden"
           >
-            {/* Header del menu overlay */}
             <div className="flex justify-between items-center w-full">
               <span className="font-serif text-xl font-bold text-brand-primary">
                 Caffè del Corso
@@ -139,8 +127,6 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
                 <CloseIcon />
               </button>
             </div>
-
-            {/* Lista dei link animati */}
             <motion.ul
               className="flex-grow flex flex-col justify-center items-center gap-y-4"
               variants={listVariants}
@@ -159,8 +145,6 @@ const MenuNav: React.FC<MenuNavProps> = ({ categorie }) => {
                 </motion.li>
               ))}
             </motion.ul>
-
-            {/* Footer con lo switcher */}
             <div className="flex justify-center pb-4">
               <ThemeSwitcher />
             </div>

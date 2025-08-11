@@ -19,7 +19,7 @@ const Hero = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <h1 className="text-7xl md:text-9xl font-serif font-bold text-brand-primary drop-shadow-2xl">
-          Caffè del Corso
+          Caffè Del Corso
         </h1>
         <p className="mt-4 text-xl md:text-2xl font-sans text-white drop-shadow-lg">
           Dove stile e sapore si incontrano.

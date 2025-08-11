@@ -1,10 +1,19 @@
-import React, { createContext, useState, useEffect, useContext } from "react";
+import React, {
+  createContext,
+  useState,
+  useEffect,
+  useContext,
+  useMemo,
+} from "react";
+import { palettes, type Palette } from "./palettes";
 
-type Theme = "light" | "dark";
+type Mode = "light" | "dark";
 
 interface ThemeContextType {
-  theme: Theme;
-  toggleTheme: () => void;
+  themeName: string;
+  setThemeName: (name: string) => void;
+  mode: Mode;
+  toggleMode: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -12,29 +21,50 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState<Theme>(() => {
-    const savedTheme = localStorage.getItem("theme") as Theme;
+  const [themeName, setThemeName] = useState<string>(() => {
+    return localStorage.getItem("themeName") || "oro";
+  });
+
+  const [mode, setMode] = useState<Mode>(() => {
+    const savedMode = localStorage.getItem("mode") as Mode;
     const userPrefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-    return savedTheme || (userPrefersDark ? "dark" : "light");
+    return savedMode || (userPrefersDark ? "dark" : "light");
   });
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove("light", "dark");
-    root.classList.add(theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    const selectedPalette: Palette = palettes[themeName];
+    const themeColors = selectedPalette[mode];
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    const root = window.document.documentElement;
+    Object.entries(themeColors).forEach(([key, value]) => {
+      root.style.setProperty(`--color-${key}`, value);
+    });
+
+    root.classList.remove("light", "dark");
+    root.classList.add(mode);
+
+    localStorage.setItem("themeName", themeName);
+    localStorage.setItem("mode", mode);
+  }, [themeName, mode]);
+
+  const toggleMode = () => {
+    setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
   };
 
+  const value = useMemo(
+    () => ({
+      themeName,
+      setThemeName,
+      mode,
+      toggleMode,
+    }),
+    [themeName, mode]
+  );
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 };
 
