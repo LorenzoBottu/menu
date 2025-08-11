@@ -1,8 +1,12 @@
+// src/components/Hero.tsx
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const scrollToMenu = () => {
-    document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" });
+  // --- MODIFICA QUI: Cambiato il nome della funzione e l'ID di destinazione ---
+  const scrollToNextSection = () => {
+    document
+      .getElementById("palette-selector")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -19,7 +23,7 @@ const Hero = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <h1 className="text-7xl md:text-9xl font-serif font-bold text-brand-primary drop-shadow-2xl">
-          Caffè Del Corso
+          Caffè del Corso
         </h1>
         <p className="mt-4 text-xl md:text-2xl font-sans text-white drop-shadow-lg">
           Dove stile e sapore si incontrano.
@@ -32,7 +36,8 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        <button onClick={scrollToMenu} className="animate-bounce">
+        {/* --- E MODIFICA QUI: Aggiornato l'onClick --- */}
+        <button onClick={scrollToNextSection} className="animate-bounce">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-10 w-10 text-brand-primary"
