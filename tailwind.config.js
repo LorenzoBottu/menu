@@ -12,6 +12,7 @@ export default {
         'brand-background': 'rgb(var(--color-background) / <alpha-value>)',
         'brand-text': 'rgb(var(--color-text) / <alpha-value>)',
         'brand-text-secondary': 'rgb(var(--color-text-secondary) / <alpha-value>)',
+        
       },
       fontFamily: {
         'serif': ['"Playfair Display"', 'serif'],
